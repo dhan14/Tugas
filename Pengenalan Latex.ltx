@@ -1,0 +1,104 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{url}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{coba}{
+backgroundcolor=\color{backcolour},
+commentstyle=\color{codegreen},
+keywordstyle=\color{magenta},
+numberstyle=\tiny\color{codegray},
+stringstyle=\color{codepurple},
+basicstyle=\footnotesize,
+breakatwhitespace=false,
+breaklines=true,
+captionpos=b,
+keepspaces=true,
+numbers=left,
+numbersep=5pt,
+showspaces=false,
+showstringspaces=false,
+showtabs=false,
+tabsize=2,
+language=python
+}
+\lstset{style=coba}
+
+\title{\Large{\textbf{Laporan Membuat Program C++\\"Hello World"}}}%tanda\\sebagai spasi ke bawah
+\author{Muhammad Yaqdhan Taqy Ariana }
+\date{31 Januari 2020}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\newpage
+\setcounter{page}{1}
+\renewcommand{\contentsname}{Daftar Isi}
+\tableofcontents
+
+\newpage
+\renewcommand{\figurename}{Gambar}
+\renewcommand{\listfigurename}{Daftar Gambar}
+\listoffigures{}
+\newpage
+
+%halaman penjelasan
+\renewcommand{\partname}{Bab}
+\part{Pendahuluan}
+\section{Bahasa C++}
+\subsection{Penjelasan}
+        \begin{itemize}
+            \item Apa itu C++
+            \paragraph {}C++ adalah bahasa pemrograman komputer yang di buat oleh Bjarne Stroustrup, yang merupakan perkembangan dari bahasa C dikembangkan di Bell Labs (Dennis Ritchie) pada awal tahun 1970-an, bahasa itu diturunkan dari bahasa sebelumnya, yaitu B. Pada awalnya, bahasa tersebut dirancang sebagai bahasa pemrograman yang dijalankan pada sistem Unix. Pada perkembangannya, versi ANSI (American National Standards Institute) pada bahasa pemrograman C menjadi versi dominan, meskipun versi tersebut sekarang jarang dipakai dalam pengembangan sistem dan jaringan maupun untuk sistem embedded. Bjarne Stroustrup pada Bell Labs pertama kali mengembangkan C++ pada awal 1980-an. Untuk mendukung fitur-fitur pada C++, dibangun efisiensi dan sistem support untuk pemrograman tingkat rendah (low level coding).[1] Pada C++ ditambahkan konsep-konsep baru seperti class dengan sifat-sifatnya seperti inheritance dan overloading.[butuh rujukan] Salah satu perbedaan yang paling mendasar dengan bahasa C adalah dukungan terhadap konsep pemrograman berorientasi objek (object-oriented programming) 
+	
+	
+	\footnote{\url{https://id.wikipedia.org/wiki/C\%2B\%2B}}
+	\footnote{Buku ilang yang diambil orang 100}
+        \end{itemize}
+
+\begin{itemize}
+            \item Apa itu Hello world
+            \paragraph {}Hello world (Halo dunia) adalah nama jenis program komputer yang diambil pertama kalinya pada kursus pemrograman.
+Program ini sangat sederhana dengan menunjukkan teks "Halo dunia" di layar. Contoh awal ini dipakai untuk menulis program-program yang lebih canggih.
+Hello world! pertama kalinya dipakai oleh para pemrogram bahasa C untuk menunjukkan kemampuan bahasa ini.
+	\footnote{\url{https://id.wikipedia.org/wiki/Hello_world}}
+
+        \end{itemize}
+
+
+\newpage
+%halaman contoh
+\section{Complier C++}
+
+\paragraph {}Ada beberapa \textit{tools} untuk membuat program di C++, program tersebut memiliki sebuah \textit{complier} untuk merubah \textit{source code} menjadi sebuah program yang akan ditampilkan pada terminal.
+\\Diantaranya :
+\begin{itemize}
+\item Dev C++
+\item CodeBlocks
+\item BorlanC++
+\end{itemize}
+\paragraph {} Penulis sendiri menggunakan Codeblocks karena memiliki banyak fitur, seperti membuat program Arduino dan lain sebagainya.
+	\begin{figure}[ht]
+            \centerline{\includegraphics[height=8cm,width=12cm]{C:/Users/Dhan/Documents/Latex/figure/CodeBlock.png}}
+	\caption{Tampilan CodeBlocks}
+            \end{figure}
+\begin{figure}[ht]
+ \lstinputlisting[language=python, firstline=1, lastline=8]{C:/Users/Dhan/Documents/Latex/src/Hello world.cpp}
+\caption{Kode Hello World}
+ \end{figure}
+\bibliographystyle{plain}
+\begin{thebibliography}{Refference}
+\bibitem A Guide to LaTex.
+\end{thebibliography}
+\end{document}
